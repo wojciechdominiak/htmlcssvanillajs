@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f1f5f8;
+  color: grey;
+  line-height: 1.5;
+}
+nav {
+  background: white;
+  height: 3em;
+  display: grid;
+  align-items: center;
+  box-shadow: 5px black;
+}
+.nav-center {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-center h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 1em;
+}
+.nav-links {
+  display: flex;
+}
+ul {
+  list-style-type: none;
+}
+nav a {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin-right: 1em;
+  color: grey;
+  text-decoration: none;
+  transition: 0.1s;
+}
+nav a:hover {
+  color: black;
+}
+main {
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+  margin-top: 40vh;
+  color: white;
+}
+.container h2 {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 0.2em;
+  margin-bottom: 2.5em;
+}
+.btn-hero {
+  text-transform: uppercase;
+  background: transparent;
+  color: black;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: 0.2s;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 1px 3px black;
+  border-radius: 1em;
+  font-size: 1em;
+  padding: 0.75em 1.25em;
+}
+.btn-hero:hover {
+  color: white;
+  background: black;
+}
