@@ -111,20 +111,20 @@ function displayMenuItems(menuItems) {
 }
 
 function displayMenuBtns() {
-  const categories = menu.map(function (item) {
+  const categories = menu.map((item) => {
     return item.category;
   });
   categories.push("all");
   const categoriesArr = arrayUniq(categories);
   const categoryBtn = categoriesArr
-    .map(function (category) {
+    .map((category) => {
       return `<button class="filter-btn" type="button" data-id="${category}">${category}</button>`;
     })
     .join("");
   container.innerHTML = categoryBtn;
   const filterBtns = document.querySelectorAll(".filter-btn");
   filterBtns.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
+    btn.addEventListener("click", (e) => {
       const category = e.currentTarget.dataset.id;
       const menuCategory = menu.filter(function (menuItem) {
         if (menuItem.category === category) {

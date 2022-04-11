@@ -185,6 +185,7 @@ Menu
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .filter-btn {
   background: transparent;
@@ -192,6 +193,7 @@ Menu
   font-size: 1rem;
   text-transform: capitalize;
   margin: 0 0.5rem;
+  margin-top: 1rem;
   letter-spacing: 1px;
   border-radius: var(--radius);
   padding: 0.375rem 0.75rem;
