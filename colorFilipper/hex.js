@@ -6,7 +6,7 @@ const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
 //logic
-btn.addEventListener("click", function () {
+btn.addEventListener("click", () => {
   let hexColor = "#";
   for (let i = 0; i < 6; i++) {
     hexColor += hex[getRandomNumber()];

@@ -6,7 +6,7 @@ const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
 //logic
-btn.addEventListener("click", function () {
+btn.addEventListener("click", () => {
   const randomNumber = getRandomNumber();
   document.body.style.backgroundColor = colors[randomNumber];
   color.textContent = colors[randomNumber];
